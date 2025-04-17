@@ -1,0 +1,104 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: white;
+  color: #222;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #000;
+  color: white;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1581090700227-1e8e1bfb1f26') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+main {
+  padding: 60px 20px 20px;
+}
+
+.triple-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 60px 0;
+}
+
+.card {
+  flex: 1 1 30%;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image-section.electronics {
+  background: url('https://images.unsplash.com/photo-1581091012184-7e0cdfbb679e') no-repeat center/cover;
+  height: 400px;
+}
+
+.image-section.marketing {
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center/cover;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.services ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.contact {
+  background: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .triple-grid {
+    flex-direction: column;
+  }
+}

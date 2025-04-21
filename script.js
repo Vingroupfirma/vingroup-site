@@ -1,1 +1,0 @@
-// Optional: Add animations on scroll later
